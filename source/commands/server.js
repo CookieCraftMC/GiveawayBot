@@ -9,6 +9,6 @@ module.exports = class extends Command {
 
     execute(message) {
         message.reply('Check your DMs. :wink:');
-        message.author.send(`The official Discord Server: https://discord.gg/WAF9sNj`);
+        message.author.send(`The official Discord Server: https://discord.gg/WjdYDQe`);
     }
 };
