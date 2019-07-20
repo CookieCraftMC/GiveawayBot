@@ -45,7 +45,7 @@ new class extends Client {
             const command = await this.fetchCommand(content.split(' ')[0]);
             if (!command) return;
 
-            message.guildAdmin = message.member.hasPermission("MANAGE_GUILD") || message.member.roles.map(r => r.name).includes("MG Admin");
+            message.guildAdmin = message.member.hasPermission("MANAGE_GUILD");
 
             command.execute(message);
         });
